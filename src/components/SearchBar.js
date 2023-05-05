@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
 
-function SearchBar ({setResults}) {
+function SearchBar({ setResults }) {
   const [input, setInput] = useState("");
 
   const fetchData = (value) => {
@@ -27,7 +27,6 @@ function SearchBar ({setResults}) {
 
   return (
     <div className="input-wrapper">
-      
       <input
         className="input"
         placeholder="Type to search..."
@@ -36,6 +35,6 @@ function SearchBar ({setResults}) {
       />
     </div>
   );
-};
+}
 
 export default SearchBar;
